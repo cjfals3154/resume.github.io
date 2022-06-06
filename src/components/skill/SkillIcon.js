@@ -12,12 +12,27 @@ import {
 } from "react-icons/si";
 
 import SkillEffect from "./SkillEffect";
+import styled from "styled-components";
+
+const RowStyled = styled(Row)`
+  padding-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+  @media screen and (max-width: 1100px) {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+`;
 
 function SkillIcon() {
   return (
     <>
-      <div className="main-skill flex justify-evenly flex-wrap items-center pb-10">
-        <Row justify="center" style={{ paddingBottom: 50 }}>
+      <div>
+        <RowStyled justify="center">
           <Col xs={12} md={6}>
             <SkillEffect text={"Html"}>
               <SiHtml5 color="#ff5723" size="80" />
@@ -59,7 +74,7 @@ function SkillIcon() {
               <SiAntdesign size="80" />
             </SkillEffect>
           </Col>
-        </Row>
+        </RowStyled>
       </div>
     </>
   );

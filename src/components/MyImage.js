@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import My from "../images/My.jpeg";
-import TypeIt from "typeit-react";
+import Rotate from "react-reveal/Zoom";
+
 const CommonStyled = styled.section`
     text-align:center;
     justify-content:"center
@@ -18,61 +19,87 @@ const StyledImg = styled.img`
   position: relative;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(50%);
 `;
 
 const TextStyled = styled.span`
-  @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nanum+Pen+Script&display=swap");
   position: absolute;
-  top: 20%;
-  left: 23%;
+  top: 7%;
+  left: 8%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 6rem;
   color: white;
   z-index: 2;
   text-align: center;
-  font-family: "Alfa Slab One", cursive;
-  @media screen and (max-width: 740px) {
-    font-size:3rem;
+  text-shadow: white 1px 0 10px;  
+
+ 
+  @media screen and (max-width: 1320px) {
+    font-size:4rem;
+    text-shadow: white 1px 0 10px;  
+
+    @media screen and (max-width: 880px) {
+      top: 5%;
+      left: 50%;
+      text-shadow: white 1px 0 10px;  
+
 `;
 const TTextStyled = styled.span`
-  @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nanum+Pen+Script&display=swap");
   position: absolute;
-  top: 28%;
-  left: 36%;
+  top: 17%;
+  left: 24%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: white;
   z-index: 2;
   text-align: center;
-  font-family: "Alfa Slab One", cursive;
-  @media screen and (max-width: 740px) {
-    font-size:1.5rem;
-    top: 25%;
-    left: 40%;
+  text-shadow: white 1px 0 10px;  
+
+  @media screen and (max-width: 1320px) {
+    font-size:2.5rem;
+    top: 15%;
+    left: 22%;
+    text-shadow: white 1px 0 10px;  
+
+    @media screen and (max-width: 880px) {
+      top: 12%;
+      left: 50%;
+      font-size:1.2rem;
+      text-shadow: white 1px 0 10px;  
+
 `;
 
 function MyImage() {
-  const [buttonText, setButtonText] = useState("Freeze");
-  const [instance, setInstance] = useState(null);
+  const [position, setPosition] = useState(0);
 
+  function onScroll() {
+    setPosition(window.scrollY);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   return (
     <CommonStyled>
       <ImgSection>
         <StyledImg src={My} />
-        <TypeIt
-          options={{ loop: true }}
-          getAfterInit={(instance) => {
-            setInstance(instance);
-            return instance;
-          }}
-        >
-          <TextStyled>Web .·.· </TextStyled>
-          <TTextStyled>FrontEnd developer </TTextStyled>
-        </TypeIt>
+
+        <TextStyled>
+          <Rotate top left cascade>
+            Web
+          </Rotate>
+        </TextStyled>
+        <TTextStyled>
+          {" "}
+          <Rotate bottom right cascade>
+            FrontEnd developer
+          </Rotate>
+        </TTextStyled>
       </ImgSection>
     </CommonStyled>
   );

@@ -17,11 +17,11 @@ const MenuStyled = styled(Menu)`
 function Layout() {
   return (
     <div>
-      <MenuStyled mode="horizontal">
+      {/* <MenuStyled mode="horizontal">
         <Menu.Item>
           <LinkStyled to={"/"} style={{ textDecoration: "none" }}></LinkStyled>
         </Menu.Item>
-        {/* <Menu.Item>
+        <Menu.Item>
           <LinkStyled to={"/skill"}>Skill</LinkStyled>
         </Menu.Item>
         <Menu.Item>
@@ -29,9 +29,8 @@ function Layout() {
         </Menu.Item>
         <Menu.Item>
           <LinkStyled to={"/contact"}>Contact</LinkStyled>
-        </Menu.Item> */}
-      </MenuStyled>
-      {/* <Outlet /> */}
+        </Menu.Item>
+      </MenuStyled> */}
     </div>
   );
 }
