@@ -33,6 +33,11 @@ const CardFormStyled = styled(Form)`
     justify-content: center;
     text-align: center;
     width: 500px;
+    @media screen and (max-width: 370px) {
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+
   }
 `;
 
@@ -47,6 +52,15 @@ const TextStyled = styled.div`
   }
 `;
 
+const CartStyled = styled(Card)`
+  display: flex;
+  @media screen and (max-width: 370px) {
+    display: block;
+    justify-content: start;
+    text-align: start;
+  }
+`;
+
 function ProjectForm() {
   const { Meta } = Card;
   return (
@@ -58,12 +72,7 @@ function ProjectForm() {
         </span>
       </ProjectWarper>
       <CardFormStyled>
-        <Card
-          style={{
-            display: "flex",
-          }}
-          cover={<img alt="example" src={StarBucksClone} />}
-        >
+        <CartStyled cover={<img alt="example" src={StarBucksClone} />}>
           <Meta
             title="StarBucksClone"
             description={
@@ -80,15 +89,10 @@ function ProjectForm() {
               </>
             }
           />
-        </Card>
+        </CartStyled>
         <br />
 
-        <Card
-          style={{
-            display: "flex",
-          }}
-          cover={<img alt="example" src={TodoList} />}
-        >
+        <CartStyled cover={<img alt="example" src={TodoList} />}>
           <Meta
             title="TodoList"
             description={
@@ -109,16 +113,11 @@ function ProjectForm() {
               </>
             }
           />
-        </Card>
+        </CartStyled>
 
         <br />
 
-        <Card
-          style={{
-            display: "flex",
-          }}
-          cover={<img alt="example" src={NodeBird} />}
-        >
+        <CartStyled cover={<img alt="example" src={NodeBird} />}>
           <Meta
             title="Twitter Clone"
             description={
@@ -142,7 +141,7 @@ function ProjectForm() {
               </>
             }
           />
-        </Card>
+        </CartStyled>
       </CardFormStyled>
       <br />
       <br />

@@ -17,10 +17,7 @@ function SkillIcon() {
   return (
     <>
       <div className="main-skill flex justify-evenly flex-wrap items-center pb-10">
-        <Row
-          justify="center"
-          style={{ paddingLeft: 150, paddingRight: 150, paddingBottom: 50 }}
-        >
+        <Row justify="center" style={{ paddingBottom: 50 }}>
           <Col xs={12} md={6}>
             <SkillEffect text={"Html"}>
               <SiHtml5 color="#ff5723" size="80" />
