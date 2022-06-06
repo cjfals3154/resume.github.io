@@ -7,14 +7,20 @@ const ResumeWarper = styled.div`
   justify-content: center;
   text-align: center;
   padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media screen and (max-width: 740px) {
     justify-content: center;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media screen and (max-width: 1000px) {
     justify-content: center;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `;
 
@@ -129,6 +135,7 @@ function HomeResume() {
               <p>
                 Phone. <u>010-3943-3154</u>
               </p>
+              <br />
               <h2>Chanel 👀</h2>
               <p>
                 GitHub.

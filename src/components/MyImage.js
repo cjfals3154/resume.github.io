@@ -27,8 +27,8 @@ const StyledImg = styled.img`
 
 const TextStyled = styled.span`
   position: absolute;
-  top: 7%;
-  left: 8%;
+  top: 10%;
+  left: 10%;
   transform: translate(-50%, -50%);
   font-size: 6rem;
   color: white;
@@ -37,20 +37,22 @@ const TextStyled = styled.span`
   text-shadow: white 1px 0 10px;  
 
  
-  @media screen and (max-width: 1320px) {
-    font-size:4rem;
+  @media screen and (max-width: 1100px) {
+    font-size:4.5rem;
     text-shadow: white 1px 0 10px;  
 
-    @media screen and (max-width: 880px) {
-      top: 5%;
+    @media screen and (max-width: 830px) {
+      font-size:3.0rem;
+
+      top: 10%;
       left: 50%;
       text-shadow: white 1px 0 10px;  
 
 `;
 const TTextStyled = styled.span`
   position: absolute;
-  top: 17%;
-  left: 24%;
+  top: 20%;
+  left: 28%;
   transform: translate(-50%, -50%);
   font-size: 3.6rem;
   color: white;
@@ -58,16 +60,16 @@ const TTextStyled = styled.span`
   text-align: center;
   text-shadow: white 1px 0 10px;  
 
-  @media screen and (max-width: 1320px) {
-    font-size:2.5rem;
-    top: 15%;
-    left: 22%;
+  @media screen and (max-width: 1100px) {
+    font-size:2.7rem;
+    top: 19%;
+    left: 28%;
     text-shadow: white 1px 0 10px;  
 
-    @media screen and (max-width: 880px) {
-      top: 12%;
+    @media screen and (max-width: 830px) {
+      top: 15%;
       left: 50%;
-      font-size:1.2rem;
+      font-size:1.1rem;
       text-shadow: white 1px 0 10px;  
 
 `;

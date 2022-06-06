@@ -23,8 +23,8 @@ const RowStyled = styled(Row)`
     justify-content: center;
     text-align: center;
     padding-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 `;
 

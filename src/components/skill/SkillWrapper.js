@@ -6,6 +6,8 @@ import SkillIcon from "./SkillIcon";
 const SkillWarper = styled.div`
   justify-content: center;
   text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
 
   @media screen and (max-width: 740px) {
     justify-content: center;

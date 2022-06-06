@@ -5,10 +5,13 @@ import Zoom from "react-reveal/Zoom";
 const IntroduceWarper = styled.div`
   justify-content: center;
   text-align: center;
-
+  padding-left: 60px;
+  padding-right: 60px;
   @media screen and (max-width: 740px) {
     justify-content: center;
     text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   & h1 {
     color: #4e61ff;
