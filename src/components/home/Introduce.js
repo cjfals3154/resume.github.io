@@ -24,9 +24,16 @@ function Introduce() {
     <>
       <IntroduceWarper>
         <h1>Introduce .·.·</h1>
-        <span>
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        </span>
+        <div
+          style={{
+            borderBottom: "3px solid black",
+            justifyContent: "center",
+            textAlign: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: 1000,
+          }}
+        ></div>
         <br />
         <div>
           <span style={{ fontSize: 20 }}>

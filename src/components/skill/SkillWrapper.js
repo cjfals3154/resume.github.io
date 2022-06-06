@@ -28,8 +28,18 @@ function SkillWrapper() {
 
       <SkillWarper>
         <h1>Skill .·.·</h1>
+        <div
+          style={{
+            borderBottom: "3px solid black",
+            justifyContent: "center",
+            textAlign: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: 1000,
+          }}
+        ></div>
         <span>
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
         </span>
         <br />
         <div>

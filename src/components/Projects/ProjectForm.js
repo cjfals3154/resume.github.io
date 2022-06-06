@@ -33,7 +33,7 @@ const CardFormStyled = styled(Form)`
     justify-content: center;
     text-align: center;
     width: 500px;
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 450px) {
         justify-content: center;
         text-align: center;
         width: 300px;
@@ -54,7 +54,7 @@ const TextStyled = styled.div`
 
 const CartStyled = styled(Card)`
   display: flex;
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 450px) {
     display: block;
     justify-content: start;
     text-align: start;
@@ -67,9 +67,16 @@ function ProjectForm() {
     <>
       <ProjectWarper>
         <h1>Project .·.·</h1>
-        <span>
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        </span>
+        <div
+          style={{
+            borderBottom: "3px solid black",
+            justifyContent: "center",
+            textAlign: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: 1000,
+          }}
+        ></div>
       </ProjectWarper>
       <CardFormStyled>
         <CartStyled cover={<img alt="example" src={StarBucksClone} />}>

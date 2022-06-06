@@ -23,9 +23,16 @@ function ContactWrap() {
   return (
     <>
       <ContactStyled>
-        <span>
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        </span>
+        <div
+          style={{
+            borderBottom: "3px solid black",
+            justifyContent: "center",
+            textAlign: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: 1000,
+          }}
+        ></div>
       </ContactStyled>
     </>
   );
