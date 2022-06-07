@@ -42,7 +42,7 @@ function ButtonTop() {
         className={BtnStatus ? "topBtn active" : "topBtn"} // 버튼 노출 여부
         onClick={handleTop} // 버튼 클릭시 함수 호출
       >
-        <>TOP</>
+        <>GO</>
       </button>
     </div>
   );
