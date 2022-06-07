@@ -42,7 +42,7 @@ function Introduce() {
         <br />
         <div>
           <span style={{ fontSize: 20, fontWeight: 700 }}>
-            때 묻지 않은 신선한 개발자
+            신선한 개발자 &nbsp;
             <u
               style={{
                 color: "#4e61ff",
@@ -64,7 +64,8 @@ function Introduce() {
           <br />
           <br />
           <span style={{ fontSize: 15 }}>
-            개발은 혼자하는 작업이 아니라는 것 잘 알고있습니다. <br />
+            개발은 혼자하는 작업이 아니라는 것<br />
+            잘 알고있습니다. <br />
             독학이라는 단점을 극복하기 위해서 예비 개발자 <br />
             4명과 함께 1개월 간 <u> 모각코</u>를 운영하며 지식을 공유 했습니다.
             <br />

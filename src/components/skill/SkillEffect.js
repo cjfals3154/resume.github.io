@@ -7,6 +7,7 @@ function SkillEffect({ children, text }) {
         {children}
       </div>
       <div
+        style={{ paddingLeft: 60, paddingRight: 60 }}
         style={{ fontWeight: 700 }}
         className="absolute bottom-[-2.5rem] sm:bottom-[-2rem] left-[50%] translate-x-[-50%] w-full font-bold text-sm text-center "
       >

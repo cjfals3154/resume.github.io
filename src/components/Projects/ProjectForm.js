@@ -79,6 +79,8 @@ function ProjectForm() {
             alignItems: "center",
             margin: "auto",
             width: "auto",
+            marginLeft: 60,
+            marginRight: 60,
           }}
         ></div>
       </ProjectWarper>

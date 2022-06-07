@@ -24,7 +24,7 @@ const RowStyled = styled(Row)`
     text-align: center;
     padding-bottom: 50px;
     margin-left: 5px;
-    margin-right: 5 px;
+    margin-right: 5px;
   }
 `;
 
