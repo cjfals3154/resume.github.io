@@ -44,8 +44,8 @@ const CardFormStyled = styled(Form)`
 `;
 
 const TextStyled = styled.div`
-  font-size: 15px;
-  width: 300px;
+  font-size: 13px;
+  width: 250px;
   color: black;
   @media screen and (max-width: 960px) {
     font-size: 8px;
@@ -95,7 +95,7 @@ function ProjectForm() {
             description={
               <>
                 <TextStyled>
-                  <div style={{ marginBottom: 50 }}>
+                  <div style={{ marginBottom: 25 }}>
                     👨‍💻 인원 : 1명 (개인 프로젝트) <br />
                     👇 스킬 및 사용 툴 <br />
                     HTML5, CSS, JavaScript
@@ -111,7 +111,9 @@ function ProjectForm() {
         </CartStyled>
         <br />
 
-        <CartStyled cover={<img alt="example" src={TodoList} />}>
+        <CartStyled
+          cover={<img alt="example" src={TodoList} style={{ padding: 1 }} />}
+        >
           <Meta
             title={
               <div style={{ fontWeight: 700, color: "#4e61ff", fontSize: 20 }}>
@@ -121,7 +123,7 @@ function ProjectForm() {
             description={
               <>
                 <TextStyled>
-                  <div style={{ marginBottom: 50 }}>
+                  <div style={{ marginBottom: 25, padding: 1 }}>
                     👨‍💻 인원 : 1명 (개인 프로젝트) <br />
                     👇 스킬 및 사용 툴 <br />
                     HTML5, CSS, JavaScript
@@ -141,7 +143,9 @@ function ProjectForm() {
 
         <br />
 
-        <CartStyled cover={<img alt="example" src={NodeBird} />}>
+        <CartStyled
+          cover={<img alt="example" src={NodeBird} style={{ padding: 1 }} />}
+        >
           <Meta
             title={
               <div style={{ fontWeight: 700, color: "#4e61ff", fontSize: 20 }}>
@@ -151,7 +155,7 @@ function ProjectForm() {
             description={
               <>
                 <TextStyled>
-                  <div style={{ marginBottom: 50 }}>
+                  <div style={{ marginBottom: 25 }}>
                     👨‍💻 인원 : 1명 (개인 프로젝트) <br />
                     👇 스킬 및 사용 툴 <br />
                     HTML5, CSS, JavaScript, React

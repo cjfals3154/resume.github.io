@@ -1,9 +1,19 @@
-import React, { useRef } from "react";
+import React, { useCallback, useRef, useState } from "react";
+import styled from "styled-components";
 
 function SkillEffect({ children, text }) {
+  const [iconClick, setIconClick] = useState("");
+
+  const onChangeIcon = useCallback((e) => {
+    setIconClick();
+  }, []);
+
   return (
     <div>
-      <div className="skill-icon transition-[transform] rotate-[0deg] ease-in-out duration-700">
+      <div
+        className="skill-icon transition-[transform] rotate-[0deg] ease-in-out duration-700"
+        onClick={onChangeIcon}
+      >
         {children}
       </div>
       <div

@@ -23,6 +23,7 @@ const RowStyled = styled(Row)`
     justify-content: center;
     text-align: center;
     padding-bottom: 50px;
+
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -43,6 +44,7 @@ function SkillIcon() {
               <SiCss3 color="#007bc9" size="80" />
             </SkillEffect>
           </Col>
+          <div style={{ marginBottom: 150 }}></div>
           <Col xs={12} md={6}>
             <SkillEffect text={"JavaScript"}>
               <SiJavascript color="#f7e018" size="80" />
@@ -53,6 +55,7 @@ function SkillIcon() {
               <SiReact color="#61dafb" size="80" />
             </SkillEffect>
           </Col>
+
           <div style={{ marginBottom: 150 }}></div>
           <Col xs={12} md={6}>
             <SkillEffect text={"Redux"}>
@@ -64,6 +67,7 @@ function SkillIcon() {
               <SiReduxsaga size="80" />
             </SkillEffect>
           </Col>
+          <div style={{ marginBottom: 150 }}></div>
           <Col xs={12} md={6}>
             <SkillEffect text={"Next.js"}>
               <SiNextdotjs size="80" />
