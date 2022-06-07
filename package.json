@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.20.7",
     "antd-icons": "^0.1.0-alpha.1",
+    "gsap": "^3.10.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^4.4.0",
