@@ -65,8 +65,9 @@ const ContactStyled = styled.div`
   display: inline-block;
   margin-left: 20px;
   text-align: start;
+  margin-bottom: 50px;
   @media screen and (max-width: 800px) {
-    text-align: center;
+    text-align: start;
   }
   & h2 {
     color: #4e61ff;
@@ -76,7 +77,7 @@ const ContactStyled = styled.div`
     font-size: 15px;
   }
   @media screen and (max-width: 1000px) {
-    text-align: center;
+    text-align: start;
   }
   & h2 {
     color: #4e61ff;
@@ -130,15 +131,15 @@ function HomeResume() {
             <ContactStyled>
               <h2 style={{ paddingTop: 30 }}>Contact 🙌</h2>
               <p>
-                Email. <u>cjfals3154@naver.com</u>
+                Email.&nbsp;&nbsp; <u>cjfals3154@naver.com</u>
               </p>
               <p>
-                Phone. <u>010-3943-3154</u>
+                Phone.&nbsp;&nbsp; <u>010-3943-3154</u>
               </p>
               <br />
               <h2>Chanel 👀</h2>
               <p>
-                GitHub.
+                GitHub. &nbsp;&nbsp;
                 <a
                   href="https://github.com/cjfals3154"
                   target="blank"
@@ -148,7 +149,17 @@ function HomeResume() {
                 </a>
               </p>
               <p>
-                Instagram.
+                Valog. &nbsp;&nbsp;
+                <a
+                  href="https://velog.io/@cjfals3154"
+                  target="blank"
+                  style={{ color: "black" }}
+                >
+                  <u> https://velog.io/@cjfals3154</u>
+                </a>
+              </p>
+              <p>
+                Instagram.&nbsp;&nbsp;
                 <a href="https://www.instagram.com/shincheol9/" target="blank">
                   <u style={{ color: "black" }}> shincheol9</u>
                 </a>

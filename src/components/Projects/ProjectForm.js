@@ -55,6 +55,7 @@ const TextStyled = styled.div`
 
 const CartStyled = styled(Card)`
   display: flex;
+  margin-bottom: 30px;
   @media screen and (max-width: 450px) {
     display: block;
     justify-content: start;
@@ -68,7 +69,6 @@ function ProjectForm() {
     <>
       <ProjectWarper>
         <Zoom left cascade>
-          {" "}
           <h1>Project</h1>
         </Zoom>
         <div
@@ -88,7 +88,7 @@ function ProjectForm() {
         <CartStyled cover={<img alt="example" src={StarBucks} />}>
           <Meta
             title={
-              <div style={{ fontWeight: 700, color: "#008F7A", fontSize: 20 }}>
+              <div style={{ fontWeight: 700, color: "#4e61ff", fontSize: 20 }}>
                 스타벅스
               </div>
             }
@@ -114,7 +114,7 @@ function ProjectForm() {
         <CartStyled cover={<img alt="example" src={TodoList} />}>
           <Meta
             title={
-              <div style={{ fontWeight: 700, color: "#008F7A", fontSize: 20 }}>
+              <div style={{ fontWeight: 700, color: "#4e61ff", fontSize: 20 }}>
                 감정일기장
               </div>
             }
@@ -144,8 +144,8 @@ function ProjectForm() {
         <CartStyled cover={<img alt="example" src={NodeBird} />}>
           <Meta
             title={
-              <div style={{ fontWeight: 700, color: "#008F7A", fontSize: 20 }}>
-                트위터
+              <div style={{ fontWeight: 700, color: "#4e61ff", fontSize: 20 }}>
+                SNS플랫폼
               </div>
             }
             description={
@@ -161,7 +161,7 @@ function ProjectForm() {
                     styled-components, AntDesign
                   </div>
                   <div>
-                    Twitter기능구현(CRUD) <br />
+                    SNS기능구현(CRUD) <br />
                     redux-saga로 데이터 전역관리 <br />
                     프로필 기능 구현 <br />
                     회원가입 및 로그아웃 구현 <br />

@@ -22,7 +22,10 @@ const SkillWarper = styled.div`
     }
   }
 `;
-
+const SpanStyled = styled.span`
+  word-break: keep-all;
+  font-size: 15px;
+`;
 function SkillWrapper() {
   return (
     <>
@@ -45,13 +48,13 @@ function SkillWrapper() {
         ></div>
         <br />
         <div>
-          <span>
+          <SpanStyled>
             웹 표준, 웹 접근성을 고려한 시멘틱 마크업 작업이 가능합니다.
             <br />
             React, Redux, ReduxSaga, Next 언어의 <br />
             기본적인 문법에 대해 익히고 사용하며 지속적인 공부를 진행하고
             있습니다.
-          </span>
+          </SpanStyled>
         </div>
         <br />
         <br />
